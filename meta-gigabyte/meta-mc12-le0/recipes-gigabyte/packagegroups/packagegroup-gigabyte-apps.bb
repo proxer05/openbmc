@@ -25,6 +25,7 @@ RDEPENDS:${PN}-system = " \
         phosphor-host-postd \
         phosphor-post-code-manager \
         phosphor-power-regulators \
+        phosphor-sel-logger \
         entity-manager \
         dimm-inventory \
         smbios-mdr \
