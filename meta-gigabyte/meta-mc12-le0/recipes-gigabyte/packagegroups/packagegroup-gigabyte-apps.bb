@@ -29,6 +29,7 @@ RDEPENDS:${PN}-system = " \
         dimm-inventory \
         smbios-mdr \
         ami-oem-probe \
+        host-if-gadget \
         phosphor-pid-control \
         phosphor-software-manager \
         iperf3 \
