@@ -372,17 +372,23 @@ DTS nodes of UARTs with status=”disabled”' ??? */
                 reg = <0x1b>;
         };
 
+        /* The SPD addresses run by bank, not by channel: 0x50/0x51 are the
+         * "0" slots of the two channels and 0x52/0x53 the "1" slots. That
+         * matches the temperature-sensor labels above and the host's SMBIOS
+         * Type 17 device locators (the populated slots are DIMM_P0_A1 and
+         * DIMM_P0_B1), whereas the empty SPDs sit at 0x50/0x51.
+         */
         dimma0spd: eeprom@50 {
                 compatible = "ee1004";
                 reg = <0x50>;
         };
 
-        dimma1spd: eeprom@51 {
+        dimmb0spd: eeprom@51 {
                 compatible = "ee1004";
                 reg = <0x51>;
         };
 
-        dimmb0spd: eeprom@52 {
+        dimma1spd: eeprom@52 {
                 compatible = "ee1004";
                 reg = <0x52>;
         };

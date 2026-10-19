@@ -26,6 +26,7 @@ RDEPENDS:${PN}-system = " \
         phosphor-post-code-manager \
         phosphor-power-regulators \
         entity-manager \
+        dimm-inventory \
         smbios-mdr \
         ami-oem-probe \
         phosphor-pid-control \
